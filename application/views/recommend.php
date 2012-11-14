@@ -45,6 +45,7 @@
 			<div id="s2" class="steps">
 				I allow
 				<button>Submit</button>
+				<div class='loader'></div>
 			</div>
 			<div id="s3" class="steps">
 				Recommendation is coming.

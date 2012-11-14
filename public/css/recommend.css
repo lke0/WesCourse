@@ -1,3 +1,17 @@
 #recommend .left {
 	background-image: url(/public/images/recommend-num.jpg);
 }
+
+#recommend #s2 .loader {
+	display:none;
+	height:32px;
+	width:32px;
+	background-image: url(/public/images/loading.gif);
+}
+
+#recommend #s2 .upload-success {
+	
+	height:45px;
+	width:45px;
+	background-image: url(/public/images/recommend-num.jpg);
+}

@@ -1,9 +1,11 @@
 
 
 $(function() {
-    $( "button" )
+    $("button")
         .button()
         .click(function( event ) {
+			$('button').unbind('click');
+			
 			input['major'] = [];
 			$('.major').each(function() {
 				var thisMajor = parseInt($(this).val());
@@ -17,7 +19,24 @@ $(function() {
 				if (isNew) input['major'].push(thisMajor);
 			});
 			
-			alert(input['courses'].join('\n'));
-			alert(input['major'].join('\n'));
+			$('#s2 .loader').show();
+			jQuery.ajax({
+			        type: "POST",
+			        url: "http://localhost:8888/recommend/upload",
+			        data:  {'courses[]': input['courses'], 'major[]': input['major'] },
+			        dataType: "json",
+			        success: function (msg) 
+			                { $('#s2 .loader').hide();},
+			        error: function (err)
+			        { $('#s2 .loader').hide();}
+			    });
+			// $.post("http://localhost:8888/recommend/upload", {'courses[]': input['courses'], 'major[]': input['major'] },
+			//   function(){
+			// 	debugger;
+			// 	$('#s2 .loader').hide();
+			//   }, "json");
         });
 });
+
+
+
