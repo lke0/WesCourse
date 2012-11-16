@@ -14,8 +14,8 @@ class academic_history_model extends CI_Model {
 			// term: $course[1]
 			
 			$data = array(
-				'student_id' => $student_id,
-				'course_id' => $course[0],
+				'studentId' => $student_id,
+				'courseId' => $course[0],
 				'term' => $course[1]
 			);
 			

@@ -11,8 +11,8 @@ class major_model extends CI_Model {
 	{		
 		foreach ($major as $this_major) {
 			$data = array(
-				'student_id' => $student_id,
-				'major_id' => $this_major
+				'studentId' => $student_id,
+				'majorId' => $this_major
 			);
 			
 			$this->db->insert('student_major',$data);

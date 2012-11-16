@@ -12,6 +12,7 @@
 			text-align: center;
 			margin-bottom: 30px;
 			font-family: 'Helvetica', 'Arial', sans-serif;
+			font-size: 40px;
 		}
 		
 		#container .left {
@@ -40,4 +41,25 @@
 			padding-top:5px;
 			border-top:1px solid gray;
 			color: gray;
+		}
+		
+		.success {
+			font-family: Modernpics;
+			font-size: 60px;
+			margin: 0px;
+			display: none;
+		}
+		a:link { text-decoration: none }
+	/*	http://thedesignoffice.org/project/modern-pictograms/*/
+		@font-face {
+			font-family: Modernpics;
+			src: url("/public/fonts/modernpics.otf") format("opentype");
+		}
+		
+		p {
+			font-size: 15px;
+		}
+		.warning {
+			color: rgba(233,33,33,0.97);
+			font-weight: bold;
 		}

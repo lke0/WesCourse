@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/recommend.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="/public/css/ui-progress-bar.css">
+	
 	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 	<script src="/public/js/recommend.js"></script>
@@ -22,7 +24,8 @@
 		</div>
 		<div class="right">
 			<div id="s1" class="steps">
-				Choose major
+				<p>Thank you so much! There are only two more steps.</p>
+				<p>What is your major? Choose all of them if you have double/triple majors.</p>
 				<select class="major" id="1">
 				  <option value="0">Math</option>
 				  <option value="1">Econ</option>
@@ -43,17 +46,17 @@
 				</select>
 			</div>
 			<div id="s2" class="steps">
-				I allow
+				<p>Your course selection will be valuable recommendation for other students. Again, your data is totally anonymous! Thank you!</p>
+				<p>Please click the "Submit" button below.</p>
 				<button>Submit</button>
 				<div class='loader'></div>
+				<spam class='success'>%</spam>
 			</div>
 			<div id="s3" class="steps">
-				Recommendation is coming.
-				<br/>
-				processing bar
-				<br/>
-				Thank you so much for you help!
-				Tell more friends in Facebook!
+				<p>Wesleyan customized course ecommendation is coming.</p>
+				<div class="progress-bar"> </div>
+				<p>Thank you so much for you help!</p>
+				<p>Tell more friends in Facebook!</p>
 			</div>
 	
 			
